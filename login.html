@@ -888,13 +888,17 @@ toggleWelcome = function(on) {
 	var $welcome = $('.welcome');
   (on) ? $welcome.show() : $welcome.hide();
 }
+
 $('[terminal-reset]').on('click', function(){
   toggleWelcome(false);
-  location.replace("https://gnet27.ml/terminal");
+  location.replace("https://totobird.cf/terminal");
 });
+
 $('[terminal-cntne]').on('click', function(){
   toggleWelcome(false);
-  location.replace("https://www.gnet27.ml/terminal/authuser=true.html/");
+  sessionStorage.setItem("sudopass", "authuser.gnetpass27unicodeencryptascode00000000000*****");
+  location.replace("https://gnet27.ml/terminal/authuser=true");
+});
 });
 initTerminal();
 delete randkey;
